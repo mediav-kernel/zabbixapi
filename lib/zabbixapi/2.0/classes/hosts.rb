@@ -29,7 +29,7 @@ class ZabbixApi
         :method => "host.massRemove",
         :params => {
           :hostids => data[:hosts_id],
-          :templates => data[:templates_id]
+          :templateids_clear => data[:templates_id]
         }
       )
       result.empty? ? false : true
